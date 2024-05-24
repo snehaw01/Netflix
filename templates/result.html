@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <p>Title: {{ entry.title }}</p>
+        <p>Type: {{ entry.type }}</p>
+        <p>Release Year: {{ entry.release_year }}</p>
+        <p>Age Certification: {{ entry.age_certification }}</p>
+        <p>Runtime: {{ entry.runtime }} minutes</p>
+        <p>Genres: {{ entry.genres | join(', ') }}</p>
+        <p>Production Countries: {{ entry.production_countries | join(', ') }}</p>
+        <h2>Predicted IMDb Score: {{ prediction }}</h2>
+        <a href="{{ url_for('index') }}">Predict Another</a>
+    </div>
+</body>
+</html>
