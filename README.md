@@ -34,7 +34,7 @@ To run this project locally, please follow these steps:
  
 2.	Navigate to the project directory:
 
-  	cd 
+  	cd snehaw01/netflix
 
 3.	Install the required packages:
 
