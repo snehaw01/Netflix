@@ -1,8 +1,12 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container {
@@ -11,10 +15,11 @@ body {
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
 }
 
-h1, h2 {
-    text-align: center;
+h1 {
     color: #333;
 }
 
@@ -25,23 +30,50 @@ h1, h2 {
 label {
     display: block;
     margin-bottom: 5px;
-    color: #333;
+    color: #555;
 }
 
-input, select, button {
+input, select {
     width: 100%;
     padding: 10px;
     margin-top: 5px;
+    margin-bottom: 10px;
     box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ddd;
 }
 
-button {
-    background-color: #007bff;
+button.btn {
+    background-color: #ff7e5f;
     color: white;
+    padding: 10px 20px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
 }
 
-button:hover {
-    background-color: #0056b3;
+button.btn:hover {
+    background-color: #feb47b;
+}
+
+.result-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+a.btn {
+    display: inline-block;
+    background-color: #ff7e5f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+a.btn:hover {
+    background-color: #feb47b;
 }
